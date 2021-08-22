@@ -95,10 +95,10 @@ submitBtn.addEventListener("click", () => {
       submitBtn.disabled = true;
     }, 2000);
   } else {
-    if (yourScore === 1) {
-      question.innerHTML = `You answered ${yourScore} question of 7.`;
+    if (yourScore === 7) {
+      question.innerHTML = `You answered ${yourScore} question of 7. You're genious!`;
     }
-    question.innerHTML = `You answered ${yourScore} questions of 7. You're genious!`;
+    question.innerHTML = `You answered ${yourScore} questions of 7.`;
     answerField.innerHTML = "";
     setTimeout(() => { window.location.reload(); }, 5000);
   }
